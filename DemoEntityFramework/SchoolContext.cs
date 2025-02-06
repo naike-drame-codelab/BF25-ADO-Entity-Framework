@@ -13,6 +13,7 @@ namespace DemoEntityFramework
     {
         // définir une liste connectée à la db via DbSet
         public DbSet<Student> Students { get; set; }
+        public DbSet<Section> Sections { get; set; }
 
         // configurer notre DbContext avec nos infos de connexion et le driver utilisé pour se connecter, ici SQL Server
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
