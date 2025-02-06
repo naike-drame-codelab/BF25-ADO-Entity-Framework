@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DemoEntityFramework
 {
-    // DbContext : class d'EF qui va définir la class de base de notre Context : la class définit les tables et DbContext définit le contexte
+    // Une instance de DbContext représentera une session avec la base de données, qui permettra d'interagir directement avec elle.
     public class SchoolContext : DbContext
     {
         // définir une liste connectée à la db via DbSet
